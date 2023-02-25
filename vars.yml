@@ -3,6 +3,14 @@
     matrix_client_element_enabled: false
     matrix_synapse_ext_password_provider_shared_secret_auth_enabled: true
 
+    matrix_heisenbridge_enabled: false
+    matrix_mautrix_discord_enabled: false
+    matrix_beeper_linkedin_enabled: false
+    matrix_mautrix_twitter_enabled: false
+    matrix_mautrix_telegram_enabled: false
+    matrix_mautrix_whatsapp_enabled: false
+    matrix_mautrix_googlechat_enabled: false
+
     matrix_homeserver_generic_secret_key: '<create_secretkey1>'
     devture_postgres_connection_password: '<create_secretkey2>'
     matrix_synapse_ext_password_provider_shared_secret_auth_shared_secret: <create_secretkey3>
