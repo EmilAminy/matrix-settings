@@ -13,6 +13,12 @@ docker run -it --rm \
     --entrypoint=/bin/sh \
     docker.io/devture/ansible:2.13.6-r0-1
 
+git config --global --add safe.directory /work
+make roles
+ansible-playbook -i inventory/hosts setup.yml \
+    --tags=install-all,ensure-matrix-users-created,start
+ansible-playbook -i inventory/hosts setup.yml \
+    --tags=self-check
 ansible-playbook -i inventory/hosts setup.yml \
     --extra-vars="username=${ADMIN_USERNAME} password=${ADMIN_PASSWORD} admin=yes" \
     --tags=register-user
