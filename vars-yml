@@ -1,0 +1,14 @@
+---
+    matrix_homeserver_implementation: synapse
+    matrix_client_element_enabled: false
+    matrix_synapse_ext_password_provider_shared_secret_auth_enabled: true
+
+    matrix_domain: <insert_domain>
+    matrix_ssl_lets_encrypt_support_email: '<insert_email>'
+    matrix_homeserver_generic_secret_key: '<create_secretkey1>'
+    devture_postgres_connection_password: '<create_secretkey2>'
+    matrix_synapse_ext_password_provider_shared_secret_auth_shared_secret: <create_secretkey3>
+
+    matrix_mautrix_signal_enabled: <enable_signal>
+    matrix_mautrix_facebook_enabled: <enable_facebook>
+    matrix_mautrix_instagram_enabled: <enable_instagram>
