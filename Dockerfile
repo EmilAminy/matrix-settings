@@ -14,6 +14,7 @@ RUN wget https://raw.githubusercontent.com/EmilAminy/matrix-settings/main/hosts.
 
 RUN wget https://raw.githubusercontent.com/EmilAminy/matrix-settings/main/entrypoint.sh
 RUN chmod u+x entrypoint.sh
-ENTRYPOINT [ "/entrypoint.sh" ]
 
 WORKDIR /matrix-docker-ansible-deploy
+
+ENTRYPOINT [ "/entrypoint.sh" ]
