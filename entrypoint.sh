@@ -3,8 +3,8 @@
 mkdir /matrix-docker-ansible-deploy/inventory/host_vars/${MY_DOMAIN}
 mv /vars.yml /matrix-docker-ansible-deploy/inventory/host_vars/${MY_DOMAIN}
 
-sed -i "s/<your_domain>/${MY_DOMAIN}/g" /matrix-docker-ansible-deploy/examples/hosts
-mv /matrix-docker-ansible-deploy/examples/hosts /matrix-docker-ansible-deploy/inventory
+sed -i "s/<your_domain>/${MY_DOMAIN}/g" /hosts.yml
+mv /hosts.yml /matrix-docker-ansible-deploy/inventory
 
 docker run -it --rm \
     -w /work \
